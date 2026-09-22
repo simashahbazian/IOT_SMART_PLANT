@@ -23,12 +23,16 @@ I independently implemented the weekly prediction workflow for sensor data.
 
  🚨 Sensor Control — Monitoring & Alerts
 
-Implemented the **sensor monitoring and alert logic** responsible for detecting abnormal sensor readings and notifying users.
+I independently implemented the sensor monitoring and alert logic for the system.
 
-- Monitored incoming sensor values
-- Applied threshold-based checks for abnormal readings
-- Implemented alert/notification logic
-- Integrated alerts with the project's Telegram-based communication
+- Receives real-time sensor data through MQTT
+- Retrieves device-specific thresholds from the Device Catalog
+- Checks sensor readings against plant and home-environment thresholds
+- Applies seasonal thresholds for home-environment monitoring
+- Detects out-of-range sensor values
+- Generates alert/control messages for abnormal readings
+- Publishes control messages through MQTT
+- Integrated the component with the project's Service and Device Catalog
 
 > This was a group academic project. The components described above represent my individual contribution.
 

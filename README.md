@@ -10,7 +10,7 @@ The system collects real-time data from temperature, soil moisture, and light se
 
 As part of this group project, I independently developed two components:
 
- ⏱️ TimeShift — Weekly Prediction Workflow
+ ⏱️ [TimeShift — Weekly Prediction Workflow](./Timeshift/predictor.py)
 
 Implemented the weekly prediction workflow for sensor data.
 
@@ -22,7 +22,7 @@ Implemented the weekly prediction workflow for sensor data.
 - Publishes prediction alarms through MQTT
 - Runs the prediction workflow once per week
 
- 🚨 Sensor Control — Monitoring & Alerts
+ 🚨 [Sensor Control — Monitoring & Alerts](./sensor_control/sensor_control.py)
 
 Implemented the sensor monitoring and alert logic for the system.
 

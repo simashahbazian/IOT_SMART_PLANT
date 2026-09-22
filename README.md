@@ -11,11 +11,15 @@ As part of this group project, I independently developed two components:
 
  ⏱️ TimeShift — Weekly Prediction Workflow
 
-Implemented the **weekly prediction workflow**, using historical sensor data to generate predictions for the following period.
+I independently implemented the weekly prediction workflow for sensor data.
 
-- Processed historical sensor data for prediction
-- Implemented the weekly prediction workflow
-- Integrated the prediction component into the project's microservices architecture
+- Fetches historical temperature and soil-moisture data from ThingSpeak
+- Uses linear regression to model sensor trends
+- Generates predictions for the following 7 days
+- Compares predicted values with device-specific thresholds
+- Generates prediction alarms for out-of-range values
+- Publishes prediction alarms through MQTT
+- Runs the prediction workflow once per week
 
  🚨 Sensor Control — Monitoring & Alerts
 

@@ -4,6 +4,7 @@ An IoT-based plant monitoring and care system that uses Raspberry Pi, sensors, m
 
 The system collects real-time data from temperature, soil moisture, and light sensors, processes the data through a microservices architecture, and provides automated predictions and alerts through Telegram.
 
+---
 
  👩‍💻 My Contribution
 
@@ -11,7 +12,7 @@ As part of this group project, I independently developed two components:
 
  ⏱️ TimeShift — Weekly Prediction Workflow
 
-I independently implemented the weekly prediction workflow for sensor data.
+Implemented the weekly prediction workflow for sensor data.
 
 - Fetches historical temperature and soil-moisture data from ThingSpeak
 - Uses linear regression to model sensor trends
@@ -23,7 +24,7 @@ I independently implemented the weekly prediction workflow for sensor data.
 
  🚨 Sensor Control — Monitoring & Alerts
 
-I independently implemented the sensor monitoring and alert logic for the system.
+Implemented the sensor monitoring and alert logic for the system.
 
 - Receives real-time sensor data through MQTT
 - Retrieves device-specific thresholds from the Device Catalog
@@ -32,7 +33,7 @@ I independently implemented the sensor monitoring and alert logic for the system
 - Detects out-of-range sensor values
 - Generates alert/control messages for abnormal readings
 - Publishes control messages through MQTT
-- Integrated the component with the project's Service and Device Catalog
+- Integrates with the project's Service and Device Catalog
 
 > This was a group academic project. The components described above represent my individual contribution.
 
